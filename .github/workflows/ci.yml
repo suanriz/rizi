@@ -42,7 +42,7 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: suanriz/rizitest
+          slug: suanriz/rizi
 
       - name: Build project
         run: pnpm generate
