@@ -2,7 +2,7 @@
 
 # [好日子咖啡輕食 (RIZI COFE HOUSE)](https://suanriz.github.io/rizi/)
 
-[![Build](https://github.com/suanriz/rizi/actions/workflows/ci.yaml/badge.svg)](https://github.com/suanriz/rizi/actions/workflows/ci.yaml)
+[![Build](https://github.com/suanriz/rizi/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/suanriz/rizi/actions/workflows/ci.yaml)
 [![Codecov](https://codecov.io/gh/suanriz/rizi/branch/master/graph/badge.svg)](https://codecov.io/gh/suanriz/rizi)
 [![Node.js](https://img.shields.io/badge/Node.js-v20.19.6-0FC93F?logo=node.js&logoColor=FFFFFF&labelColor=505050)](https://nodejs.org/en/blog/release/v20.19.6)
 [![Pnpm](https://img.shields.io/badge/Pnpm-10.26.0-0FC93F?logo=pnpm&logoColor=FFFFFF&labelColor=505050)](https://pnpm.io/)
