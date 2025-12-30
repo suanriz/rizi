@@ -1,0 +1,783 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "img": "img/banner/coffee",
+      "link": "store",
+      "alt": "coffee"
+    },
+    {
+      "id": 2,
+      "img": "img/banner/drink",
+      "link": "menu/list/3/",
+      "alt": "drink"
+    },
+    {
+      "id": 3,
+      "img": "img/banner/dessert",
+      "alt": "dessert"
+    }
+  ],
+  "news": [
+    {
+      "id": 4,
+      "title": "憑振興放送券，享經典拿鐵、經典黑咖啡88折",
+      "introduction": "咖啡是最溫暖的顏色，最療癒的能量飲，對抗疫情期間，大家都辛苦了，讓我們一同攜手振興未來，開心喝咖啡",
+      "img": "img/newsView/id4",
+      "type": 1
+    },
+    {
+      "id": 3,
+      "title": "好日子咖啡輕食x知名植物奶品牌OATLY聯名",
+      "introduction": "OATLY燕麥奶選用來自北歐優質燕麥製成，不添加防腐劑或甜味劑，打造美味健康的植物奶！",
+      "img": "img/newsView/id3",
+      "type": 2
+    },
+    {
+      "id": 2,
+      "title": "12月會員日，享年度最低85折優惠",
+      "introduction": "所有來客消費咖啡系列任一品項，享買一送一優惠，搭配指定甜點享九折優惠！",
+      "img": "img/newsView/id2",
+      "type": 1
+    },
+    {
+      "id": 1,
+      "title": "11月限定！國際咖啡節優惠享不完",
+      "introduction": "所有來客消費咖啡系列任一品項，享買一送一優惠，搭配指定甜點享九折優惠！",
+      "img": "img/newsView/id1",
+      "type": 1
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "冰心莓果優格",
+      "link": "/menu/list/1",
+      "img": "img/menuGoods/cakeB",
+      "indexImg": "img/indexMenu/fruitYogurt",
+      "indexImagePCSize": [
+        287,
+        496
+      ],
+      "indexImagePhoneSize": [
+        186,
+        332
+      ],
+      "price": 120,
+      "type": 3,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeB",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "選用香水草莓，果香濃郁且酸甜平衡，搭配細緻滑順的優格基底，每一口都清爽無負擔",
+          "features": "不含香料、色素與化學添加物",
+          "ingredients": "來自苗栗武榮草莓園，採用無農藥、無化肥的安心栽培方式",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1份 (362gl) ",
+          "815",
+          "56",
+          "18(33%)",
+          "11(73%)",
+          "726(36%)"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "義式黑巧拿鐵",
+      "link": "/menu/list/2",
+      "img": "img/menuGoods/cakeH",
+      "indexImg": "img/indexMenu/chocolateLatte",
+      "indexImagePCSize": [
+        347,
+        205
+      ],
+      "indexImagePhoneSize": [
+        377,
+        223
+      ],
+      "price": 160,
+      "type": 1,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeH",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "濃郁的義式巧克力與香醇咖啡完美結合，入口香甜，餘韻醇厚",
+          "features": "使用高品質巧克力與精品咖啡豆，保證純正風味",
+          "ingredients": "精選義大利進口巧克力粉，搭配手工烘焙咖啡豆與新鮮牛奶",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1杯 (350ml)",
+          "250",
+          "30",
+          "5(10%)",
+          "3(15%)",
+          "50(2%)"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "清爽西瓜特調",
+      "link": "/menu/list/3",
+      "img": "img/menuGoods/cakeG",
+      "indexImg": "img/indexMenu/refreshingWatermelonSpecial",
+      "indexImagePCSize": [
+        386,
+        205
+      ],
+      "indexImagePhoneSize": [
+        205,
+        109
+      ],
+      "price": 100,
+      "type": 2,
+      "tag": [
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeG",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "清甜多汁的西瓜風味，結合微酸的檸檬特調，帶來夏日清涼口感",
+          "features": "不含人工色素與香料，保留水果原汁原味",
+          "ingredients": "採用新鮮西瓜汁與天然檸檬汁調製而成，無化學添加",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1杯 (400ml)",
+          "120",
+          "24",
+          "1(2%)",
+          "0(0%)",
+          "10(0%)"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "熱壓蘑菇芝士",
+      "link": "/menu/list/4",
+      "img": "img/menuGoods/cakeJ",
+      "indexImg": "img/indexMenu/mushroomSandwich",
+      "indexImagePCSize": [
+        219,
+        282
+      ],
+      "indexImagePhoneSize": [
+        262,
+        338
+      ],
+      "price": 100,
+      "type": 4,
+      "tag": [
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeJ",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "濃郁芝士香搭配嫩滑蘑菇，麵包酥脆，內餡濃厚，層次豐富",
+          "features": "選用優質乳酪與新鮮蘑菇，無添加人工調味",
+          "ingredients": "採用現烤麵包與手工調配餡料，健康美味",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1份 (280g)",
+          "420",
+          "22",
+          "8(16%)",
+          "5(25%)",
+          "360(18%)"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "莓果幕斯塔",
+      "link": "/menu/list/5",
+      "img": "img/menuGoods/cakeE",
+      "indexImg": "img/indexMenu/berryMousta",
+      "indexImagePCSize": [
+        337,
+        282
+      ],
+      "indexImagePhoneSize": [
+        268,
+        224
+      ],
+      "price": 130,
+      "type": 3,
+      "tag": [
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeE",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "濃郁的莓果風味，搭配柔滑的慕斯質地，入口即化，酸甜平衡，層次豐富",
+          "features": "不含香料、色素與化學添加物，天然食材製作",
+          "ingredients": "採用新鮮莓果，結合優質乳品，製作出綿密的慕斯口感",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1份 (350g)",
+          "690",
+          "45",
+          "12(24%)",
+          "8(50%)",
+          "620(28%)"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "法式馬卡龍",
+      "link": "/menu/list/6",
+      "img": "img/menuGoods/cakeK",
+      "indexImg": "img/indexMenu/macaron",
+      "indexImagePCSize": [
+        168,
+        138
+      ],
+      "indexImagePhoneSize": [
+        186,
+        153
+      ],
+      "price": 130,
+      "type": 3,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeK",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "酥脆外殼搭配柔滑內餡，提供抹茶、香草、巧克力、草莓等多種口味，層次豐富，甜而不膩",
+          "features": "不含人工添加物，精選天然食材，每一口都充滿細膩手工風味",
+          "ingredients": "採用優質杏仁粉、新鮮蛋白與天然調味料製作，搭配多種風味內餡，口感絕佳",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1份 (280g)",
+          "530",
+          "25",
+          "10(20%)",
+          "6(40%)",
+          "480(22%)"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "抹茶生乳捲",
+      "link": "/menu/list/7",
+      "img": "img/menuGoods/cakeF",
+      "indexImg": "img/indexMenu/matchaMilkRoll",
+      "indexImagePCSize": [
+        168,
+        138
+      ],
+      "indexImagePhoneSize": [
+        186,
+        153
+      ],
+      "price": 130,
+      "type": 3,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeF",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "濃厚的靜岡抹茶香氣與柔滑的生乳餡相結合，微苦帶甜，尾韻悠長",
+          "features": "不含人工添加物，選用天然抹茶粉，健康美味兼具",
+          "ingredients": "採用日本靜岡抹茶粉，搭配優質鮮奶油與低筋麵粉製作，口感細緻",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1份 (300g)",
+          "530",
+          "25",
+          "10(20%)",
+          "6(40%)",
+          "480(22%)"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "靜岡抹茶拿鐵",
+      "link": "/menu/list/8",
+      "img": "img/menuGoods/cakeI",
+      "indexImg": "img/menuGoods/cakeI",
+      "indexImagePCSize": [
+        580,
+        580
+      ],
+      "indexImagePhoneSize": [
+        280,
+        280
+      ],
+      "price": 160,
+      "type": 1,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/menuGoods/cakeI",
+          "img/menuGoods/cakeA",
+          "img/menuGoods/cakeC",
+          "img/menuGoods/cakeD"
+        ],
+        "features": {
+          "flavor": "清新細膩的抹茶香氣，結合濃郁的奶香，茶與奶的比例完美調和",
+          "features": "不添加人工甜味劑，選用高品質抹茶粉與鮮奶",
+          "ingredients": "採用日本靜岡抹茶粉，搭配新鮮牛奶，展現純粹自然風味",
+          "shelfLife": "冷藏2天內食用完畢"
+        },
+        "nutritionFacts": [
+          "1杯 (350ml)",
+          "180",
+          "20",
+          "6(12%)",
+          "4(20%)",
+          "60(3%)"
+        ]
+      }
+    }
+  ],
+  "goods": [
+    {
+      "id": 1,
+      "name": "衣索比亞 厭氧日曬 罕貝拉 瓦米納鎮 迪奇朵村",
+      "link": "/store/1",
+      "img": "img/storeGoods/coffeeE",
+      "price": 260,
+      "onSale": 230,
+      "type": 1,
+      "tag": [
+        0,
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeE",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "熱帶水果，莓果，蜜糖",
+          "flavorDetail": "風味描述：豐富的芒果、鳳梨及莓果香氣，尾韻帶有清甜的蜜糖風味。",
+          "roast": "淺焙",
+          "acidity": "5分"
+        },
+        "info": [
+          "內容成分：100% 衣索比亞咖啡豆（厭氧日曬，罕貝拉 瓦米納鎮 迪奇朵村）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "瓜地馬拉 水洗 Rosma莊園 Maragogype種",
+      "link": "/store/2",
+      "img": "img/storeGoods/coffeeJ",
+      "price": 220,
+      "type": 2,
+      "tag": [
+        0
+      ],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeJ",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "巧克力，堅果，太妃糖",
+          "flavorDetail": "風味描述：入口帶有濃郁的巧克力與太妃糖香氣，伴隨堅果的圓潤口感。",
+          "roast": "中焙",
+          "acidity": "3分"
+        },
+        "info": [
+          "內容成分：100% 瓜地馬拉咖啡豆（水洗處理，Rosma莊園，Maragogype種）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "印尼 曼特寧 半水洗",
+      "link": "/store/3",
+      "img": "img/storeGoods/coffeeF",
+      "price": 200,
+      "type": 3,
+      "tag": [
+        0
+      ],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeF",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "泥土氣息，黑巧克力，煙燻調",
+          "flavorDetail": "風味描述：濃厚的泥土氣息搭配黑巧克力的苦甜感，尾韻帶有微微煙燻調。",
+          "roast": "深焙",
+          "acidity": "2分"
+        },
+        "info": [
+          "內容成分：100% 印尼咖啡豆（曼特寧，半水洗處理）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "肯亞 AA Top Kamwangi",
+      "link": "/store/4",
+      "img": "img/storeGoods/coffeeG",
+      "price": 250,
+      "type": 1,
+      "tag": [
+        0,
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeG",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "黑加侖子，柑橘，葡萄",
+          "flavorDetail": "風味描述：獨特的黑加侖子和葡萄香氣，搭配明亮的柑橘酸度，層次豐富。",
+          "roast": "淺焙",
+          "acidity": "5分"
+        },
+        "info": [
+          "內容成分：100% 肯亞咖啡豆（AA Top，Kamwangi處理站）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "宏都拉斯 水洗 El Puente莊園",
+      "link": "/store/5",
+      "img": "img/storeGoods/coffeeH",
+      "price": 230,
+      "type": 1,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeH",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "花香，橘皮，蜜糖",
+          "flavorDetail": "風味描述：細膩的花香交織著橘皮的柑橘感，尾韻帶有甜美的蜜糖韻味。",
+          "roast": "淺焙",
+          "acidity": "4分"
+        },
+        "info": [
+          "內容成分：100% 宏都拉斯咖啡豆（水洗處理，El Puente莊園）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "哥倫比亞 日曬 Pink Bourbon",
+      "link": "/store/6",
+      "img": "img/storeGoods/coffeeJ",
+      "price": 280,
+      "onSale": 250,
+      "type": 1,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeJ",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "莓果，柑橘，花香",
+          "flavorDetail": "風味描述：清新的柑橘調伴隨莓果酸甜，尾韻中有淡淡的花香。",
+          "roast": "淺焙",
+          "acidity": "4分"
+        },
+        "info": [
+          "內容成分：100% 哥倫比亞咖啡豆（日曬處理，Pink Bourbon）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "巴西 Pulped Natural Yellow Bourbon",
+      "link": "/store/7",
+      "img": "img/storeGoods/coffeeF",
+      "price": 210,
+      "type": 2,
+      "tag": [
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeF",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "焦糖，堅果，牛奶巧克力",
+          "flavorDetail": "風味描述：甜美的焦糖與牛奶巧克力，融合堅果的溫潤風味，香氣濃郁。",
+          "roast": "中焙",
+          "acidity": "3分"
+        },
+        "info": [
+          "內容成分：100% 巴西咖啡豆（Pulped Natural處理，Yellow Bourbon）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "薩爾瓦多 黑蜜處理 Pacamara",
+      "link": "/store/8",
+      "img": "img/storeGoods/coffeeI",
+      "price": 300,
+      "onSale": 280,
+      "type": 2,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeI",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "黑莓，葡萄乾，蜂蜜",
+          "flavorDetail": "風味描述：濃郁的黑莓和葡萄乾風味，結合蜂蜜般的甜美尾韻。",
+          "roast": "中焙",
+          "acidity": "4分"
+        },
+        "info": [
+          "內容成分：100% 薩爾瓦多咖啡豆（黑蜜處理，Pacamara）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "巴拿馬 翡翠莊園 Hacienda La Esmeralda",
+      "link": "/store/9",
+      "img": "img/storeGoods/coffeeG",
+      "price": 400,
+      "type": 1,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeG",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "茉莉花，柑橘，桃子",
+          "flavorDetail": "風味描述：柔和的茉莉花香襯托柑橘酸度，桃子的甜美與滑順口感令人回味。",
+          "roast": "淺焙",
+          "acidity": "5分"
+        },
+        "info": [
+          "內容成分：100% 巴拿馬咖啡豆（翡翠莊園，Hacienda La Esmeralda）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "印度 雨季馬拉巴 Malabar Monsooned",
+      "link": "/store/10",
+      "img": "img/storeGoods/coffeeE",
+      "price": 200,
+      "type": 3,
+      "tag": [
+        1
+      ],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeE",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "木質香氣，奶油，香料",
+          "flavorDetail": "風味描述：濃厚的木質與香料氣息，伴隨奶油般的滑順口感。",
+          "roast": "深焙",
+          "acidity": "2分"
+        },
+        "info": [
+          "內容成分：100% 印度咖啡豆（雨季馬拉巴處理，Monsooned Malabar）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "威士忌酒漬咖啡禮盒 限量瓶裝豆版",
+      "link": "/store/11",
+      "img": "img/storeGoods/coffeeK",
+      "price": 600,
+      "onSale": 520,
+      "type": 4,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeK",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeC"
+        ],
+        "features": {
+          "flavor": "蜜瓜，紅蘋果，蜂蜜",
+          "flavorDetail": "風味描述：清甜的蜜瓜與紅蘋果香氣，結合蜂蜜的柔和甜感。",
+          "roast": "中焙",
+          "acidity": "4分"
+        },
+        "info": [
+          "內容成分：100% 哥斯大黎加咖啡豆（蜜處理，Tarrazu地區）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "璀璨之星濾掛咖啡禮盒(18入) 隨機口味各3包",
+      "link": "/store/12",
+      "img": "img/storeGoods/coffeeK",
+      "price": 480,
+      "type": 4,
+      "tag": [],
+      "detail": {
+        "imgs": [
+          "img/storeGoods/coffeeK",
+          "img/storeGoods/coffeeA",
+          "img/storeGoods/coffeeB",
+          "img/storeGoods/coffeeD"
+        ],
+        "features": {
+          "flavor": "可可，葡萄乾，濃郁水果",
+          "flavorDetail": "風味描述：濃厚的可可與葡萄乾香氣，結合多層次的濃郁水果酸甜感。",
+          "roast": "深焙",
+          "acidity": "3分"
+        },
+        "info": [
+          "內容成分：100% 葉門咖啡豆（摩卡馬塔里處理，Haraz地區）",
+          "商品規格：0.5磅 / 包",
+          "烘焙地區：台灣",
+          "保存期限：18個月，製造日期如包裝標示",
+          "儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議您最佳賞味期間內飲用完畢",
+          "咖啡因量：5.13mg / 克（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）",
+          "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
+        ]
+      }
+    }
+  ]
+}

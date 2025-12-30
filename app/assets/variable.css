@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --mainRed: #702222;
+  --mainGray: #f5f5f5;
+  --mainTxt: #333;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --tableTH: #fff9eb;
+  --deepGray: #666;
+  --gray: #ccc;
+  --lightGray: #eee;
+  --shadowLight: #e6e0d2e1;
+  --shadow: #e6e0d2;
+  --shadowDeep: #303030;
+  --cardAddToCart: #42424285;
+  --cardAddToCartHover: #884140e6;
+  --tagBG: #e8e8e8;
+  --cartLine: #fcfcfc;
+
+  --zIndexDefault: 1;
+  --zIndexOverlay: 1000;
+  --zIndexPopup: 2000;
+}
+
+@theme {
+  --breakpoint-navFull: 800px;
+  --breakpoint-conceptFull: 748px;
+  --breakpoint-contactFull: 625px;
+  --breakpoint-newsFull: 499px;
+  --breakpoint-infoSm: 399px;
+  --breakpoint-menuSm: 351px;
+
+  --breakpoint-footerSm: 386px;
+  --breakpoint-footer2Sm: 225px;
+
+  --breakpoint-brandTwoCol: 650px;
+  --breakpoint-brandOneCol: 340px;
+
+  --breakpoint-cartSm: 536px;
+  --breakpoint-cart2Sm: 312px;
+
+  --breakpoint-cardFourCol: 924px;
+  --breakpoint-cardThreeCol: 680px;
+  --breakpoint-cardTwoCol: 280px;
+
+  --breakpoint-mainPicCol: 850px;
+  --breakpoint-mainWrapCol: 600px;
+  --breakpoint-mainSmallPicCol: 359px;
+}

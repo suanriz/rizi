@@ -1,0 +1,298 @@
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('/fonts/NotoSansTC-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('/fonts/NotoSansTC-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('/fonts/NotoSansTC-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@layer base {
+
+  html,
+  body {
+    font-family:
+      'Noto Sans TC',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      'PingFang TC',
+      'Microsoft JhengHei',
+      sans-serif;
+  }
+
+  img,
+  video {
+    max-width: none;
+    height: auto;
+  }
+
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: var(--lightGray);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--mainTxt);
+    border-left: 1px solid var(--lightGray);
+    border-radius: 10px;
+  }
+
+  #__nuxt {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--mainRed);
+  }
+
+  ol li {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+}
+
+@layer utilities {
+  .text-shadow-deep {
+    text-shadow:
+      0px 0px 6px var(--shadowDeep),
+      0px 0px 3px var(--shadowDeep),
+      0px 0px 1px var(--shadowDeep);
+  }
+}
+
+@layer components {
+  button {
+    color: var(--mainTxt);
+    background-color: var(--shadowLight);
+    border: 1px solid var(--shadowLight);
+    padding: 10px 16px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--deepGray);
+    color: var(--mainWhite) !important;
+    border-color: var(--deepGray) !important;
+  }
+
+  button:disabled,
+  button[disabled] {
+    cursor: not-allowed;
+    border-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: none;
+  }
+
+  button:disabled:hover,
+  button[disabled]:hover {
+    border-color: #d9d9d9 !important;
+    color: rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .buttonPrimary {
+    color: var(--deepGray);
+    background-color: transparent;
+    border: 1px solid var(--deepGray);
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+
+  .buttonPrimary:hover {
+    background-color: var(--deepGray);
+    border: 1px solid transparent;
+  }
+
+  .contentWrap {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 75px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4%;
+  }
+
+  @media (max-width: 767px) {
+    .contentWrap {
+      margin: 0 auto 50px;
+    }
+  }
+
+  .shopWrap {
+    flex: 1;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 16px;
+  }
+
+  .shopWrap .shopItem {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    padding: 0 4%;
+  }
+
+  @media (max-width: 924px) {
+    .shopWrap .shopItem {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .shopWrap .shopItem {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 280px) {
+    .shopWrap .shopItem {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  .priceWrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .priceWrap > div {
+    line-height: 1.2em;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-weight: 300;
+    color: var(--mainRed);
+    margin: 0 6px;
+  }
+
+  .priceWrap > div > span {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+
+  .priceWrap .onSalePriceTxt {
+    color: var(--deepGray);
+    position: relative;
+  }
+
+  .priceWrap .onSalePriceTxt::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background: var(--deepGray);
+  }
+
+  .priceWrap .filterWrap {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .priceWrap .filterWrap .ant-tabs {
+    width: fit-content;
+  }
+
+  .noGood {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5em;
+    color: var(--deepGray);
+    flex: 1;
+  }
+
+  /* antd樣式 */
+  /* 按鈕 */
+  .ant-btn {
+    border-radius: 0;
+    font-size: 16px;
+    padding: 10px 16px;
+    height: auto;
+  }
+
+  .ant-btn-default:hover {
+    background-color: var(--deepGray) !important;
+    color: var(--mainWhite) !important;
+    border-color: var(--deepGray) !important;
+  }
+
+  .ant-btn-primary {
+    box-shadow: none !important;
+  }
+
+  .ant-btn-primary:not(:disabled):hover {
+    background-color: #7d3c39 !important;
+  }
+
+  .ant-btn-primary:not(:disabled):hover {
+    background: var(--cardAddToCartHover);
+  }
+
+  /* 彈窗 */
+  .ant-modal-header .ant-modal-title {
+    font-size: 20px !important;
+    padding-right: 16px;
+  }
+
+  .ant-modal .ant-modal-body {
+    font-size: 16px !important;
+  }
+
+  .ant-modal .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 18px !important;
+  }
+
+  .ant-modal .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+    margin-inline-start: 0px;
+  }
+
+  .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    color: #fff !important;
+    font-weight: normal !important;
+  }
+}

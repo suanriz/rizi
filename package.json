@@ -1,0 +1,52 @@
+{
+  "name": "rizi-nuxt",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.26.0+sha512.3b3f6c725ebe712506c0ab1ad4133cf86b1f4b687effce62a9b38b4d72e3954242e643190fc51fa1642949c735f403debd44f5cb0edd657abe63a8b6a7e1e402",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "lint": "eslint . --fix",
+    "typecheck": "nuxt typecheck",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@ant-design-vue/nuxt": "1.4.6",
+    "@ant-design/icons-vue": "7.0.1",
+    "@emailjs/browser": "4.4.1",
+    "ant-design-vue": "4.2.6",
+    "nuxt": "4.2.2",
+    "pinia": "3.0.4",
+    "pinia-plugin-persistedstate": "4.7.1",
+    "swiper": "12.0.3",
+    "tailwindcss": "4.1.18",
+    "vue": "3.5.25"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "@nuxt/test-utils": "3.21.0",
+    "@nuxtjs/critters": "0.9.0",
+    "@nuxtjs/tailwindcss": "7.0.0-beta.1",
+    "@pinia/nuxt": "0.11.3",
+    "@types/node": "25.0.2",
+    "@typescript-eslint/parser": "8.49.0",
+    "@vitest/coverage-v8": "4.0.16",
+    "@vitest/ui": "4.0.16",
+    "eslint": "9.39.2",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-vue": "10.6.2",
+    "eslint-plugin-vuejs-accessibility": "2.4.1",
+    "globals": "16.5.0",
+    "happy-dom": "20.0.11",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.49.0",
+    "vitest": "4.0.16",
+    "vue-eslint-parser": "10.2.0",
+    "vue-tsc": "3.1.8"
+  }
+}
