@@ -1,13 +1,21 @@
 <img src="https://raw.githubusercontent.com/suanriz/rizi/refs/heads/master/public/img/logoFooter.webp" height="96px" alt="logo">
 
 # [好日子咖啡輕食 (RIZI COFE HOUSE)](https://suanriz.github.io/rizi/)
+一個前端優化達到 Lighthouse 100 分的網頁展示作品，同時擁有購物流程與響應式體驗。
 
 [![Build](https://github.com/suanriz/rizi/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/suanriz/rizi/actions/workflows/ci.yaml)
 [![Codecov](https://codecov.io/gh/suanriz/rizi/branch/master/graph/badge.svg)](https://codecov.io/gh/suanriz/rizi)
 [![Node.js](https://img.shields.io/badge/Node.js-v20.19.6-0FC93F?logo=node.js&logoColor=FFFFFF&labelColor=505050)](https://nodejs.org/en/blog/release/v20.19.6)
 [![Pnpm](https://img.shields.io/badge/Pnpm-10.26.0-0FC93F?logo=pnpm&logoColor=FFFFFF&labelColor=505050)](https://pnpm.io/)
+
+<img width="294" src="https://github.com/suanriz/rizi/blob/master/docs/riziScore-phone.png"/> <img width="294" src="https://github.com/suanriz/rizi/blob/master/docs/riziScore-pc.png"/>
 <br/>
 <br/>
+
+## 主要目標 (Project Goals)
+- 高效能與 SEO 最佳化
+- 使用 Nuxt 4 + Vue 3 + TailwindCSS 4 打造高效能前端架構
+- 模擬購物與收藏功能，含 Email 通知
 <br/>
 
 ## 特色功能 (Features)
@@ -21,7 +29,7 @@
   - 展示品牌核心價值與最新活動。
 - **高品質程式碼**：
   - 嚴格的 ESLint 規範。
-  - 單元測試。
+  - 單元測試 100% 覆蓋率。
 <br/>
 
 ## 技術棧 (Tech Stack)
