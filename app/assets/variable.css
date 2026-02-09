@@ -24,8 +24,8 @@
 }
 
 @theme {
+  --breakpoint-conceptFull: 1099px;
   --breakpoint-navFull: 800px;
-  --breakpoint-conceptFull: 748px;
   --breakpoint-contactFull: 625px;
   --breakpoint-newsFull: 499px;
   --breakpoint-infoSm: 399px;

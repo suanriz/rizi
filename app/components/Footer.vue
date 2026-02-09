@@ -15,7 +15,7 @@ const HEAD_OFFICE_TYPE = [...SHOP_INFO_TYPE.filter(x => x.type !== 'opening')].s
   if (b.type === 'address') return 1
   return 0
 })
-const HEAD_OFFICE_INFO = SHOP_INFO.find(x => x.id === 1) as InfoDataType 
+const HEAD_OFFICE_INFO = SHOP_INFO.find(x => x.id === 1) as InfoDataType
 </script>
 
 <template>

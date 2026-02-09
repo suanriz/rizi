@@ -7,9 +7,9 @@ const { app: { baseURL } } = useRuntimeConfig()
 <template>
   <section class="overflow-x-clip">
     <Divider title="品牌精神" />
-    <div class="w-full flex flex-col items-center m-auto conceptFull:flex-row">
+    <div class=" w-full flex flex-col items-center m-auto conceptFull:flex-row">
       <div
-        class="w-full conceptFull:w-[58.44%]"
+        class="w-full conceptFull:w-[68%]"
         data-aos="fade-right"
         data-aos-duration="800"
         data-aos-easing="ease-in-sine"
@@ -28,14 +28,13 @@ const { app: { baseURL } } = useRuntimeConfig()
         </video>
       </div>
       <div
-        class="w-[80%] conceptFull:w-[234px] ml-0 conceptFull:ml-[9%] text-justify"
+        class="w-[80%] conceptFull:w-[32%] ml-0 conceptFull:px-[5%] text-justify"
         data-aos="fade-left"
         data-aos-duration="800"
         data-aos-easing="ease-in-sine"
       >
         <h3
-          dir="rtl"
-          class="text-[20px] font-[300] tracking-[.08em] leading-[1.5em] text-[var(--mainRed)] h-[80px] justify-center indent-[-.7em] conceptFull:indent-[-.5em] flex items-center text-center"
+          class="text-[20px] font-[300] tracking-[.08em] leading-[1.5em] text-[var(--mainRed)] h-[80px] justify-center indent-[.7em] flex items-center text-center"
         >
           享受生活，過「好日子」
         </h3>

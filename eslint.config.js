@@ -51,7 +51,8 @@ export default [
       'no-non-null-assertion': 0,
       'comma-spacing': 'error',
       'arrow-spacing': ['error', { before: true, after: true }],
-      'no-multiple-empty-lines': ['error', { max: 1 }],
+      'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 1 }],
+      'no-trailing-spaces': 'error',
       quotes: [
         'error',
         'single',

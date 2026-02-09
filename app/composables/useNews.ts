@@ -13,7 +13,7 @@ export const useNews = (
     const p = toValue(params)
     return `newsList-${p.type}-${p.page}-${p.pageSize}`
   })
-  
+
   return useAsyncData(
     dynamicKey,
     async () => simulateNewsApi(toValue(params)),

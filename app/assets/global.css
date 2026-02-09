@@ -82,11 +82,37 @@
 }
 
 @layer utilities {
-  .text-shadow-deep {
+  .textShadowDeep {
     text-shadow:
       0px 0px 6px var(--shadowDeep),
       0px 0px 3px var(--shadowDeep),
       0px 0px 1px var(--shadowDeep);
+  }
+  
+  .scrollText {
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: bottom;
+  }
+
+  .scrollTextItem {
+    display: block;
+    flex-shrink: 0;
+    transition: transform 400ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  /* Frosted Glass Effect */
+  .frosted-glass {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .scrollTextParent:hover .scrollTextItem {
+    transform: translateY(-100%);
   }
 }
 
@@ -294,5 +320,13 @@
   .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
     color: #fff !important;
     font-weight: normal !important;
+  }
+
+  /* swiper樣式 */
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
   }
 }

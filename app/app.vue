@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useHead, useRuntimeConfig } from '#imports'
+import { onMounted, ref } from 'vue'
 
 const { app: { baseURL } } = useRuntimeConfig()
+const colorPrimary = ref('#702222')
+const colorTextBase = ref('#505050')
 
 useHead({
   title: '好日子咖啡輕食 RIZI COFE HOUSE',
@@ -34,12 +37,33 @@ useHead({
     { rel: 'icon', type: 'image/svg+xml', href: `${baseURL}img/favicon.svg` },
   ]
 })
+
+onMounted(() => {
+  requestIdleCallback?.(() => {
+    const rootStyle = getComputedStyle(document.documentElement)
+    const mainRed = rootStyle.getPropertyValue('--mainRed').trim()
+    const mainTxt = rootStyle.getPropertyValue('--mainTxt').trim()
+
+    if (mainRed) colorPrimary.value = mainRed
+    if (mainTxt) colorTextBase.value = mainTxt
+  })
+})
 </script>
 
 <template>
-  <a-extract-style>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </a-extract-style>
+  <a-config-provider
+    :theme="{
+      token: {
+        colorPrimary,
+        colorTextBase,
+        fontFamily: 'Noto Sans TC, sans-serif'
+      }
+    }"
+  >
+    <a-extract-style>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </a-extract-style>
+  </a-config-provider>
 </template>
