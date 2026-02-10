@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import { useRoute } from '#imports'
+import { useRuntimeConfig, useRoute } from '#imports'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 import { useCartStore } from '@/stores/cartStore'
 import { NAV_INFO } from '@/utils/constants'
 
+const { app: { baseURL } } = useRuntimeConfig()
 const route = useRoute()
 const cartStore = useCartStore()
 const cartData = computed(() => cartStore.items.length)
@@ -46,7 +47,7 @@ onBeforeUnmount(() => {
       <div class="navFull:mr-[45px] relative">
         <h1>
           <NuxtLink to="/">
-            <span class="shine absolute w-[144px] h-[30px] overflow-hidden [mask-image:url(/img/logo.webp)] [mask-size:100%] after:content-[''] after:absolute after:top-[-50%] after:left-[-230%] after:w-[30px] after:h-[200%] after:bg-gradient-to-r after:from-transparent after:via-[#af1212c2] after:to-transparent after:rotate-90 after:pointer-events-none" />
+            <span class="shine absolute w-[144px] h-[30px] overflow-hidden [mask-size:100%] after:content-[''] after:absolute after:top-[-50%] after:left-[-230%] after:w-[30px] after:h-[200%] after:bg-gradient-to-r after:from-transparent after:via-[#af1212c2] after:to-transparent after:rotate-90 after:pointer-events-none" :style="{ maskImage: `url(${baseURL}img/logo.webp)` }" />
             <img
               src="/img/logo.webp"
               alt="RIZI COFE HOUSE"
