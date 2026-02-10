@@ -43,9 +43,10 @@ onBeforeUnmount(() => {
         aria-controls="mainNav"
         @click="isNavOpen = !isNavOpen"
       />
-      <div class="navFull:mr-[45px]">
+      <div class="navFull:mr-[45px] relative">
         <h1>
           <NuxtLink to="/">
+            <span class="shine absolute w-[144px] h-[30px] overflow-hidden [mask-image:url(/img/logo.webp)] [mask-size:100%] after:content-[''] after:absolute after:top-[-50%] after:left-[-230%] after:w-[30px] after:h-[200%] after:bg-gradient-to-r after:from-transparent after:via-[#af1212c2] after:to-transparent after:rotate-90 after:pointer-events-none" />
             <img
               src="/img/logo.webp"
               alt="RIZI COFE HOUSE"
@@ -69,14 +70,14 @@ onBeforeUnmount(() => {
             <NuxtLink
               :to="item.link"
               :class="[
-                'scrollTextParent block p-[20px] no-underline text-[16px] leading-[16px] tracking-[.1em] font-[400] hover:!text-[var(--mainRed)] navFull:text-[16px] navFull:font-[400] navFull:p-0',
+                'scrollTextParent block p-[20px] no-underline text-[16px] leading-[16px] tracking-[.2em] font-[400] hover:!text-[var(--mainRed)] navFull:text-[16px] navFull:font-[400] navFull:p-0',
                 item.link === route.path ? '!text-[var(--mainRed)]' : '!text-[var(--mainTxt)]'
               ]"
             >
-              <span class="scrollText js-index-group">
+              <span class="scrollText navFull:text-center">
                 <span class="scrollTextItem"> {{ item.label }}</span>
-                <span class="scrollTextItem" aria-hidden="true">
-                  {{ item.label }}
+                <span class="scrollTextItem navFull:tracking-[0.05em]" aria-hidden="true">
+                  {{ item.link.slice(1).toUpperCase() }}
                 </span>
               </span>
             </NuxtLink>
@@ -161,5 +162,16 @@ onBeforeUnmount(() => {
   transition:
     bottom 0.3s 0.3s,
     transform 0.3s 0s;
+}
+</style>
+
+<style scoped>
+@keyframes logoShine {
+  0% { left: -20%; }
+  100% { left: 120%; }
+}
+
+.shine:hover::after {
+  animation: logoShine 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>
