@@ -107,6 +107,13 @@
   .scrollTextParent:hover .scrollTextItem {
     transform: translateY(-100%);
   }
+
+  @media (max-width: 767px) {
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
 }
 
 @layer components {
@@ -117,6 +124,7 @@
     padding: 10px 16px;
     font-size: 15px;
     cursor: pointer;
+    font-weight: 300;
   }
 
   button:hover {
@@ -145,8 +153,9 @@
     background-color: transparent;
     border: 1px solid var(--deepGray);
     padding: 10px 16px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.3em;
+    font-weight: 300;
   }
 
   .buttonPrimary:hover {

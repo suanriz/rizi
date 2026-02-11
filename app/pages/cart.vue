@@ -149,10 +149,10 @@ definePageMeta({ title: '購物車' })
           class="grow flex [@media_(max-width:255px)]:flex-wrap justify-start items-center gap-[10px] cartSm:mr-[10px] w-full"
         >
           <a-checkbox v-if="activeTab === 1" v-model:checked="good.checked" class="w-[20px] shrink-0" />
-          <div class="w-[80px] shrink-0">
+          <NuxtLink :to="good.link" class="w-[80px] shrink-0">
             <ResponsiveImg img-class="w-full" :src="good.img" :alt="good.name" />
-          </div>
-          <div class="flex grow justify-start items-center min-w-[77.88px] cart2Sm:w-full">
+          </NuxtLink>
+          <div class="flex grow justify-start items-center min-w-[77.88px] cart2Sm:w-full self-stretch">
             <span class="leading-[16px]">{{ good.name }}</span>
           </div>
         </div>
@@ -187,7 +187,7 @@ definePageMeta({ title: '購物車' })
             >
               收藏
             </button>
-            <button v-if="activeTab === 1" class="mt-[10px]" @click="cartStore.remove(good.id)">
+            <button v-if="activeTab === 1" class="mt-[10px] buttonPrimary" @click="cartStore.remove(good.id)">
               刪除
             </button>
             <button

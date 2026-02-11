@@ -15,6 +15,14 @@ const handleResize = () => {
   if (window.innerWidth >= 1000 && isNavOpen.value) isNavOpen.value = false
 }
 
+watch(isNavOpen, (val) => {
+  if (val) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+})
+
 watch(
   () => route.path,
   () => isNavOpen.value = false
@@ -29,6 +37,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
+  document.body.style.overflow = ''
 })
 </script>
 
