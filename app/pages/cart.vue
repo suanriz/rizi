@@ -159,6 +159,14 @@ definePageMeta({ title: '購物車' })
         <div
           class="shrink-2 flex flex-wrap cart2Sm:flex-nowrap justify-center cart2Sm:justify-end items-center gap-[10px] cart2Sm:pl-[30px] cartSm:pl-0 mt-[10px] cart2Sm:mt-0 w-full"
         >
+          <div v-if="activeTab === 1" class="flex justify-center items-center text-center w-[90px]">
+            <a-input-number
+              v-model:value="good.count"
+              class="font-sans"
+              :min="1"
+              :max="999"
+            />
+          </div>
           <div class="priceWrap flex justify-center items-center w-[70px]">
             <div v-if="good.onSale" class="priceTxt onSalePriceTxt">
               <span>NT$</span>{{ good.price }}
@@ -167,17 +175,8 @@ definePageMeta({ title: '購物車' })
               <span>NT$</span>{{ good.onSale ?? good.price }}
             </div>
           </div>
-          <div v-if="activeTab === 1" class="flex justify-center items-center text-center w-[90px]">
-            <a-input-number
-              id="inputNumber"
-              v-model:value="good.count"
-              class="font-sans"
-              :min="1"
-              :max="999"
-            />
-          </div>
           <div :class="['flex flex-col justify-center items-center', activeTab === 1 ? 'w-[66px]' : 'w-[114px]']">
-            <button
+            <a-button
               v-if="activeTab === 1"
               class=""
               @click="() => {
@@ -186,11 +185,11 @@ definePageMeta({ title: '購物車' })
               }"
             >
               收藏
-            </button>
-            <button v-if="activeTab === 1" class="mt-[10px] buttonPrimary" @click="cartStore.remove(good.id)">
+            </a-button>
+            <a-button v-if="activeTab === 1" class="mt-[10px]" @click="cartStore.remove(good.id)">
               刪除
-            </button>
-            <button
+            </a-button>
+            <a-button
               v-if="activeTab === 2"
               @click="() => {
                 cartStore.add(good)
@@ -198,7 +197,7 @@ definePageMeta({ title: '購物車' })
               }"
             >
               加入購物車
-            </button>
+            </a-button>
           </div>
         </div>
       </div>
@@ -231,9 +230,9 @@ definePageMeta({ title: '購物車' })
           <span>NT$</span>{{ renderPrice().totalSale }}
         </div>
       </div>
-      <button :disabled="!cartData.some(x => x?.checked)" @click="isCheckoutModalShow = true">
+      <a-button type="primary" :disabled="!cartData.some(x => x?.checked)" @click="isCheckoutModalShow = true">
         結帳
-      </button>
+      </a-button>
     </div>
   </section>
   <a-modal
@@ -263,7 +262,6 @@ definePageMeta({ title: '購物車' })
       class="w-full flex flex-col items-end !m-[10px_0]"
       no-style
     >
-      真的會收到信件哦
       <a-form-item
         label="信箱"
         name="email"
@@ -275,38 +273,6 @@ definePageMeta({ title: '購物車' })
         <a-input v-model:value="formData.email" />
       </a-form-item>
     </a-form>
+    <a-divider />
   </a-modal>
 </template>
-
-<style scoped>
-::v-deep(.ant-input-number-input) {
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-.ant-form-item {
-  max-width: 250px;
-  margin-inline-end: 0px;
-  margin-bottom: 0;
-}
-
-.ant-form-item ::v-deep(.ant-form-item-label) {
-  flex: 0 0 auto;
-  padding: 0;
-}
-
-.ant-form-item ::v-deep(.ant-form-item-label) label {
-  font-size: 16px;
-}
-
-.ant-form-item ::v-deep(.ant-form-item-label .ant-form-item-required:after) {
-  display: block;
-}
-
-.ant-form-item ::v-deep(.ant-form-item-control) {
-  flex: 1 0 calc(100% - 46.45px);
-}
-
-.ant-form-item ::v-deep(.ant-form-item-control input) {
-  border-radius: 0;
-}
-</style>

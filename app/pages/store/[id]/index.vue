@@ -83,20 +83,19 @@ definePageMeta({
           </li>
         </ul>
         <div class="flex flex-col">
-          <button
+          <a-button
             class="w-full mb-[12px]"
-            type="submit"
+            type="primary"
             @click="cartStore.add(good)"
           >
             加入購物車
-          </button>
-          <button
-            type="submit"
-            class="buttonPrimary w-full"
+          </a-button>
+          <a-button
+            class="w-full"
             @click="favouriteStore.add(good)"
           >
             加入收藏清單
-          </button>
+          </a-button>
         </div>
       </div>
     </div>

@@ -112,9 +112,9 @@ definePageMeta({ title: '聯絡我們' })
           data-aos-duration="800"
           data-aos-easing="ease-in-sine"
         >
-          <button type="submit">
+          <a-button type="primary">
             送出信件
-          </button>
+          </a-button>
         </div>
       </form>
     </div>

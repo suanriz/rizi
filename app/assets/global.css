@@ -20,7 +20,6 @@
 }
 
 @layer base {
-
   html,
   body {
     font-family:
@@ -117,52 +116,6 @@
 }
 
 @layer components {
-  button {
-    color: var(--mainTxt);
-    background-color: var(--shadowLight);
-    border: 1px solid var(--shadowLight);
-    padding: 10px 16px;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 300;
-  }
-
-  button:hover {
-    background-color: var(--deepGray);
-    color: var(--mainWhite) !important;
-    border-color: var(--deepGray) !important;
-  }
-
-  button:disabled,
-  button[disabled] {
-    cursor: not-allowed;
-    border-color: #d9d9d9;
-    color: rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.04);
-    box-shadow: none;
-  }
-
-  button:disabled:hover,
-  button[disabled]:hover {
-    border-color: #d9d9d9 !important;
-    color: rgba(0, 0, 0, 0.25) !important;
-  }
-
-  .buttonPrimary {
-    color: var(--deepGray);
-    background-color: transparent;
-    border: 1px solid var(--deepGray);
-    padding: 10px 16px;
-    font-size: 15px;
-    line-height: 1.3em;
-    font-weight: 300;
-  }
-
-  .buttonPrimary:hover {
-    background-color: var(--deepGray);
-    border: 1px solid transparent;
-  }
-
   .contentWrap {
     width: 100%;
     max-width: 1080px;
@@ -269,66 +222,109 @@
     color: var(--deepGray);
     flex: 1;
   }
+}
 
-  /* antd樣式 */
-  /* 按鈕 */
-  .ant-btn {
-    border-radius: 0;
-    font-size: 16px;
-    padding: 10px 16px;
-    height: auto;
-  }
+/* antd樣式 */
+/* 按鈕 */
+.ant-btn {
+  padding: 10px 16px;
+  font-weight: 300;
+  font-size: 14px;
+  height: auto;
+}
 
-  .ant-btn-default:hover {
-    background-color: var(--deepGray) !important;
-    color: var(--mainWhite) !important;
-    border-color: var(--deepGray) !important;
-  }
+.ant-btn-primary {
+  color: var(--mainTxt);
+  background-color: var(--shadowLight);
+  border: 1px solid var(--shadowLight);
+  box-shadow: none;
+}
 
-  .ant-btn-primary {
-    box-shadow: none !important;
-  }
+.ant-btn-primary:not(:disabled):hover {
+  color: var(--mainTxt);
+  background-color: var(--shadowLight);
+  border-color: var(--deepGray);
+}
 
-  .ant-btn-primary:not(:disabled):hover {
-    background-color: #7d3c39 !important;
-  }
+.ant-btn-default:hover {
+  background-color: var(--deepGray);
+  color: var(--mainWhite) !important;
+  border-color: var(--deepGray);
+}
 
-  .ant-btn-primary:not(:disabled):hover {
-    background: var(--cardAddToCartHover);
-  }
+/* 彈窗 */
+.ant-modal-header .ant-modal-title {
+  font-size: 20px;
+  padding-right: 16px;
+}
 
-  /* 彈窗 */
-  .ant-modal-header .ant-modal-title {
-    font-size: 20px !important;
-    padding-right: 16px;
-  }
+.ant-modal .ant-modal-body {
+  font-size: 16px;
+}
 
-  .ant-modal .ant-modal-body {
-    font-size: 16px !important;
-  }
+.ant-modal .ant-modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
 
-  .ant-modal .ant-modal-footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 18px !important;
-  }
+.ant-modal .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+  margin-inline-start: 0px;
+}
 
-  .ant-modal .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
-    margin-inline-start: 0px;
-  }
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: #fff;
+  font-weight: normal;
+}
 
-  .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
-    color: #fff !important;
-    font-weight: normal !important;
-  }
+/* 表單 */
+.ant-input-number-input {
+  font-family: "Noto Sans TC", sans-serif;
+}
 
-  /* swiper樣式 */
-  .swiper-button-prev,
-  .swiper-button-next {
-    margin-top: 0 !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
+.ant-input-number{
+  border-radius: 0;
+}
+
+.ant-form-item {
+  max-width: 250px;
+  margin-inline-end: 0px;
+  margin-bottom: 0;
+}
+
+.ant-form .ant-form-item .ant-form-item-label {
+  flex: 0 0 auto;
+  padding: 0;
+}
+
+.ant-form-item .ant-form-item-label label {
+  font-size: 16px;
+}
+
+.ant-form-item .ant-form-item-label .ant-form-item-required:after {
+  display: block;
+}
+
+.ant-form .ant-form-item .ant-form-item-control {
+  flex: 1 0 calc(100% - 46.45px);
+}
+
+.ant-form-item .ant-form-item-control-input-content >.ant-input {
+  border-radius: 0;
+}
+
+/* swiper樣式 */
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 0 !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@custom-variant hover {
+  &:hover {
+    @slot;
   }
 }

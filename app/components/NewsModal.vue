@@ -28,14 +28,15 @@ const handleChangeNews = (type: 'next' | 'prev') => {
     <p class="mt-[6px]">
       {{ props.data.introduction }}
     </p>
+    <a-divider />
     <template #footer>
       <div class="flex justify-center gap-[20px]">
-        <button :disabled="noPrev" @click="handleChangeNews('prev')">
+        <a-button type="primary" :disabled="noPrev" @click="handleChangeNews('prev')">
           上一篇
-        </button>
-        <button :disabled="noNext" @click="handleChangeNews('next')">
+        </a-button>
+        <a-button type="primary" :disabled="noNext" @click="handleChangeNews('next')">
           下一篇
-        </button>
+        </a-button>
       </div>
     </template>
   </a-modal>

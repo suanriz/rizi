@@ -32,7 +32,7 @@ definePageMeta({ title: '門市菜單' })
         />
       </div>
       <div class="w-full md:w-[48%]">
-        <h3 class="text-[18px] text-[var(--mainRed)] leading-[30px] tracking-[.04em] font-[300]">
+        <h3 class="text-[18px] leading-[30px] tracking-[.04em] font-[400]">
           {{ item.name }}
         </h3>
         <p class="text-[16px] text-[var(--mainTxt)] leading-[25px] tracking-[.04em] font-[100]">
@@ -40,7 +40,9 @@ definePageMeta({ title: '門市菜單' })
         </p>
         <NuxtLink :to="item.link" class="no-underline cursor-auto">
           <div class="flex justify-end mt-[6px] leading-[1em]">
-            <button>View more</button>
+            <a-button type="primary">
+              View more
+            </a-button>
           </div>
         </NuxtLink>
       </div>

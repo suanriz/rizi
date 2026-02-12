@@ -34,7 +34,7 @@ defineExpose({ handleClick })
         class="hoverStyle relative text-[var(--mainTxt)] text-[18px] leading-[18px] font-[300] tracking-[.04em] m-[0_0_20px_0] pl-[10px] transition duration-[.7s] hover:translate-x-[14px]"
         :class="{ activeStyle: modelValue === index }"
       >
-        <span>{{ tab.name }}</span>
+        <span class="font-[400]">{{ tab.name }}</span>
         <span class="block text-[var(--deepGray)] text-[14px] leading-[14px] font-[100] tracking-[.1em] mt-[5px]">{{
           tab.sub }}</span>
       </p>
