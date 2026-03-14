@@ -1,25 +1,40 @@
 <script lang="ts" setup>
-import { useRuntimeConfig, useRoute } from '#imports'
+import { useRuntimeConfig, useRoute, navigateTo } from '#imports'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+
+import { useAuth } from '@/composables/useAuth'
 
 import { useCartStore } from '@/stores/cartStore'
 import { NAV_INFO } from '@/utils/constants'
 
 const { app: { baseURL } } = useRuntimeConfig()
 const route = useRoute()
+const { isAuthenticated, showLoginModal, logout } = useAuth()
 const cartStore = useCartStore()
 const cartData = computed(() => cartStore.items.length)
 const isNavOpen = ref(false)
 
+const handleUserIconClick = () => {
+  if (!isAuthenticated.value) {
+    showLoginModal.value = true
+  } else {
+    navigateTo('/user')
+  }
+}
+
 const handleResize = () => {
-  if (window.innerWidth >= 1000 && isNavOpen.value) isNavOpen.value = false
+  if (import.meta.client && window.innerWidth >= 1000 && isNavOpen.value) {
+    isNavOpen.value = false
+  }
 }
 
 watch(isNavOpen, (val) => {
-  if (val) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = ''
+  if (import.meta.client) {
+    if (val) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
   }
 })
 
@@ -33,11 +48,20 @@ onMounted(() => {
     window.addEventListener('resize', handleResize)
     handleResize()
   })
+
+  if (route.query.login === 'true') {
+    showLoginModal.value = true
+    const query = { ...route.query }
+    delete query.login
+    navigateTo({ path: route.path, query }, { replace: true })
+  }
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', handleResize)
-  document.body.style.overflow = ''
+  if (import.meta.client) {
+    window.removeEventListener('resize', handleResize)
+    document.body.style.overflow = ''
+  }
 })
 </script>
 
@@ -94,7 +118,7 @@ onBeforeUnmount(() => {
           </li>
         </ul>
       </nav>
-      <div class="flex navFull:ml-[45px] shrink-0 brandOneCol:space-x-1">
+      <div class="flex navFull:ml-[45px] brandOneCol:space-x-1">
         <NuxtLink
           to="/cart"
           aria-label="購物車"
@@ -106,7 +130,7 @@ onBeforeUnmount(() => {
               baseProfile="tiny"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 155 136"
-              class="w-[43px] aspect-[43/38] navFull:h-[27px] navFull:w-[30.76px] navFull:mr-0 transition-all duration-300 hover:scale-120 hover:text-[var(--mainRed)]"
+              class="w-[43px] aspect-[43/38] navFull:h-[27px] navFull:w-[30.76px] navFull:mr-0 transition-all duration-300 hover:scale-120 hover:text-[var(--mainRed)] leading-none"
               :class="[ route.path === '/cart' ? '!text-[var(--mainRed)]' : '!text-[var(--mainTxt)]' ]"
               fill="currentColor"
               aria-hidden="true"
@@ -119,10 +143,40 @@ onBeforeUnmount(() => {
             </svg>
           </a-badge>
         </NuxtLink>
+        <a-tooltip
+          color="white"
+          placement="bottom"
+        >
+          <template v-if="isAuthenticated" #title>
+            <button class="text-[var(--mainTxt)] cursor-pointer" @click="logout">
+              登出
+            </button>
+          </template>
+          <button
+            aria-label="會員中心"
+            class="w-[43px] aspect-[43/38] navFull:h-[27px] navFull:w-[30.76px] navFull:mr-0 transition-all duration-300 hover:scale-120 text-[var(--mainTxt)] hover:text-[var(--mainRed)] leading-none bg-transparent appearance-none border-none p-0 cursor-pointer"
+            :class="[ route.path === '/user' ? '!text-[var(--mainRed)]' : '!text-[var(--mainTxt)]' ]"
+            @click="handleUserIconClick"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.2"
+              baseProfile="tiny"
+              viewBox="0 0 155 136"
+              class="pointer-events-none"
+              fill="currentColor"
+              overflow="visible"
+              xml:space="preserve"
+            >
+              <path d="M33.4 116.6h88.2c-.1-1.1-.1-2.1-.2-3.2-.4-4.3-.9-8.5-2-12.6-2.2-8.9-7.3-16-14.5-21.6l-1.5-1.2c-1.7-1.5-2.1-3.7-.9-5.4 1.2-1.8 3.6-2.4 5.6-1.4 2.5 1.3 4.6 3.2 6.7 5.2 7.3 7 11.8 15.6 14.1 25.5 1.3 5.5 1.9 11.1 2 16.8.1 1.7-.2 3.2-1.3 4.6-1.3 1.6-2.9 2.3-4.9 2.3H29.9c-3.2 0-5.8-2.4-5.8-5.5-.1-8.6.8-17.1 3.7-25.2 3.9-10.8 11-18.9 20.9-24.7 3.6-2.1 7.3-3.7 11.2-4.9.2-.1.4-.1.6-.2-5.9-3.5-10.1-8.3-12.6-14.5-2-5-2.7-10.2-1.8-15.5 2.1-12.7 9.7-20.7 21.7-24.5 10.9-3.5 20.8-.8 29.5 6.3 5.9 4.8 9.4 11.2 10.4 18.7 1.1 8.2-.9 15.7-6.1 22.2-5.5 6.9-12.8 10.7-21.5 11.9-2.6.4-5.2.4-7.8.7-9.5 1.1-17.9 4.6-25.2 10.9-6.9 6-10.9 13.6-12.3 22.5-.6 4-.9 8.1-1.4 12.2v.6zm65.7-77.4c0-12.5-9.9-22.2-22.5-22.2-12.4 0-22.1 9.8-22.1 22s9.9 21.8 22.4 21.8c12.2-.1 22.2-9.8 22.2-21.6z" />
+            </svg>
+          </button>
+        </a-tooltip>
       </div>
     </div>
   </header>
   <div class="min-h-[70px]" />
+  <LogInModal v-model="showLoginModal" />
 </template>
 
 <style scoped>

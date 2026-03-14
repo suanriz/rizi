@@ -86,7 +86,7 @@ const handleSendList = () => {
       .replace(/\//g, '-')
     formData.content = renderList()
     formData.totalSale = renderPrice().totalSale
-    sendEmail(EMAIL_TYPE.GoodsList, formData, handleSentMail)
+    sendEmail(EMAIL_TYPE.goodsList, formData, handleSentMail)
   })
 }
 
@@ -142,7 +142,7 @@ definePageMeta({ title: '購物車' })
       <div
         v-for="good in renderTabData()"
         :key="good.id"
-        class="flex flex-col cartSm:flex-row justify-between cartSm:justify-center items-center not-first:border-t border-[var(--lightGray)] even:bg-[var(--cartLine)] w-full p-[10px]"
+        class="flex flex-col cartSm:flex-row justify-between cartSm:justify-center items-center not-first:border-t border-[var(--lightGray)] even:bg-[var(--cartLine)] hover:bg-[var(--mainGray)] w-full p-[10px]"
         :class="{ 'w-[114px]': activeTab === 1 }"
       >
         <div
@@ -168,10 +168,10 @@ definePageMeta({ title: '購物車' })
             />
           </div>
           <div class="priceWrap flex justify-center items-center w-[70px]">
-            <div v-if="good.onSale" class="priceTxt onSalePriceTxt">
+            <div v-if="good.onSale" class="onSalePriceTxt">
               <span>NT$</span>{{ good.price }}
             </div>
-            <div class="priceTxt">
+            <div>
               <span>NT$</span>{{ good.onSale ?? good.price }}
             </div>
           </div>

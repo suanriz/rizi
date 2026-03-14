@@ -6,7 +6,10 @@ import { simulateBannersApi } from '@/utils/simulation/banners'
 export const useBanner = () => {
   return useAsyncData<BannerType[]>(
     'banner',
-    async () => simulateBannersApi(),
+    async () => {
+      const res = await simulateBannersApi()
+      return res.filter(x => x.status).sort((a, b) => a.sequence - b.sequence)
+    },
     {
       server: true,
       default: () => [],

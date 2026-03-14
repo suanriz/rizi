@@ -4,48 +4,89 @@
       "id": 1,
       "img": "img/banner/coffee",
       "link": "store",
-      "alt": "coffee"
+      "alt": "coffee",
+      "sequence": 1,
+      "status": true
     },
     {
       "id": 2,
       "img": "img/banner/drink",
       "link": "menu/list/3/",
-      "alt": "drink"
+      "alt": "drink",
+      "sequence": 2,
+      "status": true
     },
     {
       "id": 3,
       "img": "img/banner/dessert",
-      "alt": "dessert"
+      "alt": "dessert",
+      "sequence": 3,
+      "status": true
     }
   ],
   "news": [
     {
+      "id": 7,
+      "title": "週年慶全店88折回饋",
+      "introduction": "慶祝好日子咖啡輕食三週年，全店飲品與輕食一律88折，歡迎來店同樂！",
+      "img": "img/newsView/id3",
+      "type": 1,
+      "create_at": "2026-10-20 09:00:00+08",
+      "status": true
+    },
+    {
+      "id": 6,
+      "title": "新品上市：焦糖瑪奇朵特調版",
+      "introduction": "獨家比例調配的焦糖瑪奇朵，香甜不膩，咖啡迷不容錯過！",
+      "img": "img/newsView/id2",
+      "type": 2,
+      "create_at": "2026-09-15 14:30:00+08",
+      "status": true
+    },
+    {
+      "id": 5,
+      "title": "夏季限定冰咖啡買一送一",
+      "introduction": "炎炎夏日，來杯冰涼咖啡最消暑！指定冰咖啡買一送一，限時優惠快來搶！",
+      "img": "img/newsView/id1",
+      "type": 1,
+      "create_at": "2026-07-01 10:00:00+08",
+      "status": true
+    },
+    {
       "id": 4,
-      "title": "憑振興放送券，享經典拿鐵、經典黑咖啡88折",
+      "title": "憑會員帳號，享經典拿鐵、經典黑咖啡88折",
       "introduction": "咖啡是最溫暖的顏色，最療癒的能量飲，對抗疫情期間，大家都辛苦了，讓我們一同攜手振興未來，開心喝咖啡",
       "img": "img/newsView/id4",
-      "type": 1
+      "type": 1,
+      "create_at": "2026-08-11",
+      "status": true
     },
     {
       "id": 3,
       "title": "好日子咖啡輕食x知名植物奶品牌OATLY聯名",
       "introduction": "OATLY燕麥奶選用來自北歐優質燕麥製成，不添加防腐劑或甜味劑，打造美味健康的植物奶！",
       "img": "img/newsView/id3",
-      "type": 2
+      "type": 2,
+      "create_at": "2026-02-27 22:53:00+08",
+      "status": true
     },
     {
       "id": 2,
       "title": "12月會員日，享年度最低85折優惠",
       "introduction": "所有來客消費咖啡系列任一品項，享買一送一優惠，搭配指定甜點享九折優惠！",
       "img": "img/newsView/id2",
-      "type": 1
+      "type": 1,
+      "create_at": "2026-02-27 22:53:00+08",
+      "status": true
     },
     {
       "id": 1,
       "title": "11月限定！國際咖啡節優惠享不完",
       "introduction": "所有來客消費咖啡系列任一品項，享買一送一優惠，搭配指定甜點享九折優惠！",
       "img": "img/newsView/id1",
-      "type": 1
+      "type": 1,
+      "create_at": "2026-02-27 22:53:00+08",
+      "status": true
     }
   ],
   "menu": [
@@ -778,6 +819,108 @@
           "退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理"
         ]
       }
+    }
+  ],
+  "orders": [
+    {
+      "id": "260111R5HU1NDQ",
+      "status": 1,
+      "totalPrice": 1320,
+      "create_at": "2026-01-11 11:11:11",
+      "shipped_at": null,
+      "completed_at": null,
+      "cancelled_at": null,
+      "items": [
+        {
+          "id": 12,
+          "name": "璀璨之星濾掛咖啡禮盒(18入) 隨機口味各3包",
+          "link": "/store/12",
+          "img": "img/storeGoods/coffeeK",
+          "price": 480,
+          "count": 1
+        },
+        {
+          "id": 8,
+          "name": "薩爾瓦多 黑蜜處理 Pacamara",
+          "link": "/store/8",
+          "img": "img/storeGoods/coffeeI",
+          "price": 280,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "260111R5HU1NDQ",
+      "status": 2,
+      "totalPrice": 560,
+      "create_at": "2026-01-11 10:12:16",
+      "shipped_at": "2026-01-12 10:50:44",
+      "completed_at": null,
+      "cancelled_at": null,
+      "items": [
+        {
+          "id": 8,
+          "name": "薩爾瓦多 黑蜜處理 Pacamara",
+          "link": "/store/8",
+          "img": "img/storeGoods/coffeeI",
+          "price": 280,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "260101R5HU1NDQ",
+      "status": 3,
+      "totalPrice": 710,
+      "create_at": "2026-01-01 11:23:08",
+      "shipped_at": "2026-01-03 09:11:45",
+      "completed_at": "2026-01-05 16:24:10",
+      "cancelled_at": null,
+      "items": [
+        {
+          "id": 6,
+          "name": "哥倫比亞 日曬 Pink Bourbon",
+          "link": "/store/6",
+          "img": "img/storeGoods/coffeeJ",
+          "price": 250,
+          "count": 1
+        },
+        {
+          "id": 5,
+          "name": "宏都拉斯 水洗 El Puente莊園",
+          "link": "/store/5",
+          "img": "img/storeGoods/coffeeH",
+          "price": 230,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "260101R5HU1NDB",
+      "status": 4,
+      "totalPrice": 710,
+      "create_at": "2026-01-01 10:02:34",
+      "shipped_at": "null",
+      "completed_at": "null",
+      "cancelled_at": "2026-01-01 11:15:13",
+      "items": [
+        {
+          "id": 6,
+          "name": "哥倫比亞 日曬 Pink Bourbon",
+          "link": "/store/6",
+          "img": "img/storeGoods/coffeeJ",
+          "price": 250,
+          "count": 1
+        },
+        {
+          "id": 5,
+          "name": "宏都拉斯 水洗 El Puente莊園",
+          "link": "/store/5",
+          "img": "img/storeGoods/coffeeH",
+          "price": 230,
+          "count": 2
+        }
+      ]
     }
   ]
 }
