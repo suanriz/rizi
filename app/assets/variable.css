@@ -20,13 +20,14 @@
 
   --zIndexDefault: 1;
   --zIndexOverlay: 1000;
-  --zIndexPopup: 2000;
+  --zIndexPopup: 1050;
 }
 
 @theme {
   --breakpoint-conceptFull: 1099px;
   --breakpoint-navFull: 800px;
   --breakpoint-contactFull: 625px;
+  --breakpoint-stepsFull: 576px;
   --breakpoint-newsFull: 499px;
   --breakpoint-infoSm: 399px;
   --breakpoint-menuSm: 351px;

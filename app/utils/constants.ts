@@ -106,8 +106,8 @@ export const CART_TYPE: OptionType[] = [
 ]
 
 export const EMAIL_TYPE: MailType = {
-  Contact: '40ouhzr',
-  GoodsList: 'evvyk7h'
+  contact: '40ouhzr',
+  goodsList: 'evvyk7h'
 }
 
 export const STEP_INFO: StepDataType[] = [
@@ -200,4 +200,12 @@ export const GOOD_DETAIL_TYPE: GoodDetailType[] = [
   { label: '產品特色', value: 'features' },
   { label: '原料選用', value: 'ingredients' },
   { label: '保存期限', value: 'shelfLife' }
+]
+
+export const ORDER_STATUS_TYPE: OptionType[] = [
+  { label: '全部', value: 0 },
+  { label: '待出貨', value: 1 },
+  { label: '待收貨', value: 2 },
+  { label: '已完成', value: 3 },
+  { label: '已取消', value: 4 }
 ]

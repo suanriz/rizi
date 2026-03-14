@@ -2,6 +2,7 @@ export type ApiParamsType = {
   page?: number
   pageSize?: number
   type?: number
+  status?: number
 }
 
 export type ApiListResponse<T> = {
@@ -84,7 +85,14 @@ export type NewsModelType = {
   data: NewsType
 }
 
-export type MailType = Readonly<Record<'Contact' | 'GoodsList', string>>
+export type LoginModelType = {
+  email: string
+  password: string
+  passwordConfirm?: string
+  name?: string
+}
+
+export type MailType = Readonly<Record<'contact' | 'goodsList', string>>
 
 export type NavInfoType = Readonly<Record<'label' | 'link', string>>
 

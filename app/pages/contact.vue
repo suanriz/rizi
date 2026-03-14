@@ -20,7 +20,7 @@ const resetFormData = () => formData.value = { ...initData }
 
 const handleSendEmail = () => {
   if (!formRef.value?.checkValidity()) return
-  sendEmail(EMAIL_TYPE.Contact, { ...formData.value }, resetFormData)
+  sendEmail(EMAIL_TYPE.contact, { ...formData.value }, resetFormData)
 }
 
 useSeoMeta({

@@ -7,8 +7,13 @@ export default defineNuxtPlugin((nuxtApp) => {
       AOS.init({
         disable: () => window.innerWidth < 768,
         initClassName: 'aos-init',
-        disableMutationObserver: false
+        disableMutationObserver: false,
+        once: true
       })
+    })
+
+    nuxtApp.hook('page:finish', () => {
+      AOS.refresh()
     })
   }
 })
